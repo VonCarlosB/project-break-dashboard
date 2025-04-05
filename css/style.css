@@ -15,3 +15,10 @@ body{
     z-index: -1;
     transition: all 1s linear;
 }
+
+#clock{
+    width: 20%;
+    min-width: 200px;
+    height: 10vh;
+    background-color: white;
+}
