@@ -11,7 +11,9 @@ body{
     width: 100%;
     height: 100vh;
     background-size: 100% 100vh;
-    position: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: -10;
     transition: all 1s linear;
 }
@@ -23,7 +25,8 @@ body{
     background-color: rgb(150, 150, 150, 0.7);
     border-radius: 15px;
     align-content: center;
-    margin: auto;
+    text-align: center;
+    margin: 20px auto;
     color: white;
     font-family: 'Franklin Gothic Medium';
     font-size: 30px;

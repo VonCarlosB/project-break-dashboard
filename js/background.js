@@ -2,23 +2,7 @@ const images = document.getElementById('images')
 let actualImage = 0
 
 
-//randomiceBackground()
-setTimeout(() => {
-    images.style.backgroundImage = `url(img/1.jpg)`
-    console.log('Imagen 1')
-    setTimeout(() => {
-        images.style.backgroundImage = `url(./img/2.jpg)`
-        console.log('Imagen 2')
-        setTimeout(() => {
-            images.style.backgroundImage = `url(../img/3.jpg)`
-            console.log('Imagen 3')
-            setTimeout(() => {
-                images.style.backgroundImage = `url(./../img/4.jpg)`
-                console.log('Imagen 4')
-            }, 5000);
-        }, 5000);
-    }, 5000);
-}, 5000);
+randomiceBackground()
 
 /* Randomize background without repetition and a blur effect */
 function randomiceBackground() {
