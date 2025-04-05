@@ -8,11 +8,18 @@
     </head>
     <body>
         <div id="images"></div>
-        <div id="clock">
+        <div class="element" id="clock">
             <p></p>
             <p></p>
         </div>
+        <div class="element" id="password">
+            <label for="pwdLength">Password size:</label>
+            <input type="number" name="pwdLength" id="passwordLength" min="12" max="50" value="12">
+            <button id="generatePassword">Generate password</button>
+            <p id="result"></p>
+        </div>
         <script src="./js/background.js"></script>
         <script src="./js/clock.js"></script>
+        <script src="./js/password.js"></script>
     </body>
 </html>

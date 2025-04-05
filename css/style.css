@@ -19,16 +19,19 @@ body{
     transition: filter 1s linear;
 }
 
-#clock{
-    width: 200px;
-    padding: 10px 0;
+.element{
+    width: 300px;
     background-color: rgba(100, 100, 100, 0.5);
     border-radius: 15px;
     align-content: center;
     text-align: center;
-    margin: 20px auto;
     color: rgb(255, 255, 255, 0.8);
     font-family: 'Franklin Gothic Medium';
+    margin: 20px auto;
+    padding: 10px;
+}
+
+#clock{
     font-size: 30px;
     font-weight: bold;
 }
@@ -36,4 +39,36 @@ body{
 #clock p:last-of-type{
     font-size: 15px;
     margin-top: 5px;
+}
+
+#password{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: large;
+}
+
+label{
+    margin-right: 10px;
+}
+
+input{
+    background-color: rgba(100, 100, 100, 0.5);
+    color: rgb(255, 255, 255, 0.8);
+    font-weight: bold;
+}
+
+#generatePassword{
+    margin-top: 10px;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+#result{
+    margin-top: 10px;
+    word-break: break-all;
+    background-color: rgba(70, 70, 70, 0.2);
+    padding: 5px;
+    border-radius: 10px;
 }
