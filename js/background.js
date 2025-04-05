@@ -14,7 +14,7 @@ function randomiceBackground() {
     /* No need for intervals as css takes care of transitions */
     images.style.filter = `saturate(0%) blur(100px)`
     setTimeout(() => {
-        images.style.backgroundImage = `url(./../img/${imgNumbr}.jpg)`
+        images.style.backgroundImage = `url(../img/${imgNumbr}.jpg)`
         images.style.filter = `saturate(80%) blur(0px)`
     }, 500);
     /* Restart the function with a random timer that ranges between .5 and 1 minute*/
