@@ -10,25 +10,30 @@ body{
 #images{
     width: 100%;
     height: 100vh;
-    background-size: 100% 100vh;
+    background-size: cover;
+    background-position: center;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -10;
-    transition: all 1s linear;
+    transition: filter 1s linear;
 }
 
 #clock{
-    width: 20%;
-    min-width: 200px;
-    height: 15vh;
-    background-color: rgb(150, 150, 150, 0.7);
+    width: 200px;
+    padding: 10px 0;
+    background-color: rgba(100, 100, 100, 0.5);
     border-radius: 15px;
     align-content: center;
     text-align: center;
     margin: 20px auto;
-    color: white;
+    color: rgb(255, 255, 255, 0.8);
     font-family: 'Franklin Gothic Medium';
     font-size: 30px;
     font-weight: bold;
+}
+
+#clock p:last-of-type{
+    font-size: 15px;
+    margin-top: 5px;
 }
