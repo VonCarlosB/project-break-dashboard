@@ -18,8 +18,48 @@
             <button id="generatePassword">Generate password</button>
             <p id="result"></p>
         </div>
+        <div class="element" id="linkSection">
+            <p class="elementTitle">Custom links</p>
+            <button id="addLink">+</button>
+            <div id="links">
+                <div>
+                    <a href="">Link1</a>
+                    <button onclick="removeLink(this)">X</button>
+                </div>
+                <div>
+                    <a href="">Link2</a>
+                    <button onclick="removeLink(this)">X</button>
+                </div>
+                <div>
+                    <a href="">Link3</a>
+                    <button onclick="removeLink(this)">X</button>
+                </div>
+                <div>
+                    <a href="">Link4</a>
+                    <button onclick="removeLink(this)">X</button>
+                </div>
+                <div>
+                    <a href="">Link5</a>
+                    <button onclick="removeLink(this)">X</button>
+                </div>
+            </div>
+        </div>
+        <div id="linkContainer" style="display: none;">
+            <div id="linkForm" class="element">
+                <p class="elementTitle">Add your link</p>
+                <br>
+                <input type="text" name="name" id="linkName" placeholder="Link name">
+                <br>
+                <input type="text" name="reference" id="reference" placeholder="www.something.com">
+                <br>
+                <button id="saveLink">Add link</button>
+                <button id="closeButton">X</button>
+            </div>
+        </div>
+
         <script src="./js/background.js"></script>
         <script src="./js/clock.js"></script>
         <script src="./js/password.js"></script>
+        <script src="./js/customLinks.js"></script>
     </body>
 </html>

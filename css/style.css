@@ -1,3 +1,8 @@
+:root{
+    --textColor: rgba(255, 255, 255, 0.8);
+    --backgroundColor: rgba(100, 100, 100, 0.5);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +17,7 @@ body{
     height: 100vh;
     background-size: cover;
     background-position: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -10;
@@ -21,11 +26,11 @@ body{
 
 .element{
     width: 300px;
-    background-color: rgba(100, 100, 100, 0.5);
+    background-color: var(--backgroundColor);
     border-radius: 15px;
     align-content: center;
     text-align: center;
-    color: rgb(255, 255, 255, 0.8);
+    color: var(--textColor);
     font-family: 'Franklin Gothic Medium';
     margin: 20px auto;
     padding: 10px;
@@ -53,16 +58,19 @@ label{
 }
 
 input{
-    background-color: rgba(100, 100, 100, 0.5);
-    color: rgb(255, 255, 255, 0.8);
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
     font-weight: bold;
 }
 
 #generatePassword{
+    width: 90%;
     margin-top: 10px;
     padding: 5px;
     color: black;
     font-weight: bold;
+    border-radius: 10px;
+    border: none;
 }
 
 #result{
@@ -71,4 +79,105 @@ input{
     background-color: rgba(70, 70, 70, 0.2);
     padding: 5px;
     border-radius: 10px;
+}
+
+#linkSection{
+    position: relative;
+}
+
+.elementTitle{
+    font-size: 20px;
+}
+
+#addLink{
+    background-color: transparent;
+    border: none;
+    color: var(--textColor);
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 45px;
+}
+
+#links{
+    margin-bottom: 10px;
+}
+
+#links div{
+    width: fit-content;
+    height: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 10px;
+    align-content: center;
+    position: relative;
+}
+
+#links div a{
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+#links div button{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.3);
+    color: var(--textColor);
+    font-size: 10px;
+}
+
+#linkContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--backgroundColor);
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-content: center;
+}
+
+#linkForm{
+    background-color: gray;
+    position: relative;
+}
+
+#linkForm input{
+    width: 90%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding-left: 5%;
+    border-radius: 10px;
+    border: none;
+}
+
+#linkForm button{
+    font-weight: bold;
+    border: none;
+}
+
+#saveLink{
+    width: 96%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: var(--textColor);
+}
+
+#closeButton{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: rgb(150, 150, 150);
+    color: var(--textColor);
 }
