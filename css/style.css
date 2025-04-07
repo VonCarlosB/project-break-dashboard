@@ -1,6 +1,6 @@
 :root{
     --textColor: rgba(255, 255, 255, 0.8);
-    --backgroundColor: rgba(100, 100, 100, 0.5);
+    --backgroundColor: rgba(100, 100, 100, 0.7);
 }
 
 *{
@@ -10,6 +10,7 @@
 
 body{
     background-color: black;
+    overflow: hidden;
 }
 
 #images{
@@ -184,4 +185,27 @@ input{
     right: -10px;
     background-color: rgb(150, 150, 150);
     color: var(--textColor);
+}
+
+@media (min-width: 650px) {
+    #content{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .container{
+        width: 50%;
+        height: 100vh;
+    }
+
+    .container .element{
+        margin-bottom: 50px;
+    }
+
+    #linkSection{
+        margin-top: 146px;
+        min-width: 300px;
+        width: 70%;
+    }
 }

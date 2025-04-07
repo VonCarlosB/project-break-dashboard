@@ -8,20 +8,29 @@
     </head>
     <body>
         <div id="images"></div>
-        <div class="element" id="clock">
-            <p></p>
-            <p></p>
-        </div>
-        <div class="element" id="password">
-            <label for="pwdLength">Password size:</label>
-            <input type="number" name="pwdLength" id="passwordLength" min="12" max="50" value="12">
-            <button id="generatePassword">Generate password</button>
-            <p id="result"></p>
-        </div>
-        <div class="element" id="linkSection">
-            <p class="elementTitle">Custom links</p>
-            <button id="addLink">+</button>
-            <div id="links"></div>
+        <div id="content">
+            <div class="container">
+                <div class="element" id="clock">
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="element" id="password">
+                    <label for="pwdLength">Password size:</label>
+                    <input type="number" name="pwdLength" id="passwordLength" min="12" max="50" value="12">
+                    <button id="generatePassword">Generate password</button>
+                    <p id="result"></p>
+                </div>
+                <div class="element">
+                    Meteorología
+                </div>
+            </div>
+            <div class="container">
+                <div class="element" id="linkSection">
+                    <p class="elementTitle">Custom links</p>
+                    <button id="addLink">+</button>
+                    <div id="links"></div>
+                </div>
+            </div>
         </div>
         <div id="linkContainer" style="display: none;">
             <div id="linkForm" class="element">
@@ -35,7 +44,6 @@
                 <button id="closeButton">X</button>
             </div>
         </div>
-
         <script src="./js/background.js"></script>
         <script src="./js/clock.js"></script>
         <script src="./js/password.js"></script>
