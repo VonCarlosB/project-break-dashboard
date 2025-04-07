@@ -159,6 +159,10 @@ input{
     border: none;
 }
 
+#linkForm input::placeholder{
+    color: var(--textColor);
+}
+
 #linkForm button{
     font-weight: bold;
     border: none;

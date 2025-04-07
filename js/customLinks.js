@@ -10,7 +10,7 @@ const closeBtn = document.getElementById('closeButton')
 const linkTemplate = (name, reference) => {
     return `
     <div>
-        <a href="https://${reference}" target="_blank">${name}</a>
+        <a href="${reference}" target="_blank">${name}</a>
         <button onclick="removeLink(this)">X</button>
     </div>
     `
