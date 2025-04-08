@@ -36,7 +36,7 @@ const currentTemplate = (weather) => {
             <img src="https:${weather[3]}" alt="${weather[2]}">
             <div>
                 ${weather[4]}
-                <img src="./../img/thermometer.png" alt="celsius" width=25>
+                <img src="./img/thermometer.png" alt="celsius" width=25>
             </div>
             <div class="info">
                 <p>Precipitation: ${weather[5]}mm</p>
