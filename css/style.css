@@ -11,7 +11,7 @@
 body{
     background-color: black;
 }
-
+/*BACKGROUND IMAGES*/
 #images{
     width: 100%;
     height: 100vh;
@@ -23,9 +23,9 @@ body{
     z-index: -10;
     transition: filter 1s linear;
 }
-
+/*GENERAL*/
 .element{
-    width: 300px;
+    width: 350px;
     background-color: var(--backgroundColor);
     border-radius: 15px;
     align-content: center;
@@ -35,7 +35,7 @@ body{
     margin: 20px auto;
     padding: 10px;
 }
-
+/*CLOCK*/
 #clock{
     font-size: 30px;
     font-weight: bold;
@@ -45,7 +45,7 @@ body{
     font-size: 15px;
     margin-top: 5px;
 }
-
+/*PASSWORD GENERATOR*/
 #password{
     display: flex;
     flex-wrap: wrap;
@@ -80,7 +80,39 @@ input{
     padding: 5px;
     border-radius: 10px;
 }
+/*WEATHER*/
+.currentWeather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
 
+.currentWeather div:first-of-type{
+    font-size: 30px;
+}
+
+.info{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.forecast{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 15px 5px;
+    background-color: var(--backgroundColor);
+    border-radius: 10px;
+    gap: 5px;
+}
+
+.forecast div{
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+/*CUSTOM LINKS*/
 #linkSection{
     position: relative;
 }
@@ -118,6 +150,7 @@ input{
 #links div a{
     color: var(--textColor);
     text-decoration: none;
+    word-break: break-all;
 }
 
 #links div button{
@@ -186,13 +219,14 @@ input{
     color: var(--textColor);
 }
 
-@media (min-width: 650px) {
+@media (min-width: 700px) {
     #content{
         width: 100%;
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
+
     .container{
         width: 50%;
         height: 100vh;
@@ -200,6 +234,16 @@ input{
 
     .container .element{
         margin-bottom: 50px;
+    }
+
+    #clock{
+        margin-left: 70%;
+        background-color: rgba(70, 70, 70, 0.2);
+        color: white;
+    }
+
+    #weather{
+        width: 70%;
     }
 
     #linkSection{
