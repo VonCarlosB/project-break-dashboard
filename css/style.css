@@ -93,6 +93,10 @@ input{
     font-size: 30px;
 }
 
+.currentWeather div img{
+    filter: invert();
+}
+
 .info{
     text-align: left;
     margin-left: 10px;
@@ -220,6 +224,20 @@ input{
     color: var(--textColor);
 }
 
+#menuIcons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#menuIcons img{
+    width: 30px;
+    cursor: pointer;
+}
+
+hr{
+    display: none;
+}
+
 @media (min-width: 750px) {
     .flex-container{
         width: 100%;
@@ -230,11 +248,10 @@ input{
 
     .container{
         width: 50%;
-        height: 100vh;
     }
 
     .container .element{
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     #clock{
@@ -252,4 +269,32 @@ input{
         min-width: 300px;
         width: 70%;
     }
+
+    #menuIcons{
+        display: block;
+        text-align: left;
+        background-color: transparent;
+        width: 90%;
+        margin-top: 14vh;
+        margin-bottom: 0;
+    }
+
+    #menuIcons img{
+        margin-right: 15px;
+    }
+    
+    hr{
+        display: block;
+        color: var(--textColor);
+    }
+}
+
+/**OTHER PAGES**/
+#homeLink{
+    margin: 20px;
+}
+
+#homeLink img{
+    width: 40px;
+    filter: opacity(0.7);
 }
