@@ -19,7 +19,8 @@ function updateTime() {
     paragraphs[0].textContent = `${hour}:${minute}:${seconds}`
     paragraphs[1].textContent = `${date}/${month}/${year}`
     if(paragraphs.length>2){
-        let timeStamp = hour*60+minute
+        let timeStamp = Number(hour)*60+Number(minute)
+        console.log(timeStamp)
         if(timeStamp>(0*60)) paragraphs[2].textContent = 'Es hora de descansar. Apaga y sigue mañana'
         if(timeStamp>(7*60)) paragraphs[2].textContent = 'Buenos días, desayuna fuerte y a darle al código'
         if(timeStamp>(12*60)) paragraphs[2].textContent = 'Echa un rato más pero no olvides comer'
