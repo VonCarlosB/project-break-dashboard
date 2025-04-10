@@ -8,6 +8,8 @@ const simbols = '!@#$%^&*()-_=+'
 const chars = [mayus, minus, numbers, simbols]
 
 boton.addEventListener('click', () => {
+    if(size.value > 50) size.value = 50
+    if(size.value < 12) size.value = 12
     let ans = ''
     ans += randomChar(mayus)
     ans += randomChar(minus)
@@ -16,7 +18,11 @@ boton.addEventListener('click', () => {
     for (let i = 0; i < size.value-4; i++) {
         ans += randomChar(chars[Math.floor(Math.random()*4)])
     }
-    result.textContent = ans
+    result.innerHTML = `
+        <p>Your password:</p>
+        <br>
+        <p>${ans}</p>
+    `
 })
 
 function randomChar(text) {

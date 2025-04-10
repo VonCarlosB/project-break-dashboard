@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
+    <title>Links</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div id="images"></div>
     <section>
-        <div class="element" id="weather"></div>
+        <div class="element" id="linkSection">
+            <p class="elementTitle">Custom links</p>
+            <button id="addLink">+</button>
+            <div id="links"></div>
+        </div>
     </section>
+    <div id="linkContainer" style="display: none;">
+        <div id="linkForm" class="element">
+            <p class="elementTitle">Add your link</p>
+            <br>
+            <input type="text" name="name" id="linkName" placeholder="Link name">
+            <br>
+            <input type="text" name="reference" id="reference" placeholder="www.something.com">
+            <br>
+            <button id="saveLink">Add link</button>
+            <button id="closeButton">X</button>
+        </div>
+    </div>
     <footer>
         <div id="menuIcons" class="element">
             <a href="index.html"><img src="./img/home.png" alt="Home"></a>
@@ -22,6 +38,6 @@
         <hr>
     </footer>
     <script src="./js/background.js"></script>
-    <script src="./js/weather.js"></script>
+    <script src="./js/customLinks.js"></script>
 </body>
 </html>
