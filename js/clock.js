@@ -6,7 +6,7 @@ setInterval(updateTime, 1000);
 
 function updateTime() {
     let year = new Date().getFullYear()
-    let month = new Date().getMonth()
+    let month = new Date().getMonth()+1
     let date = new Date().getDate()
     let hour = new Date().getHours()
     let minute = new Date().getMinutes()
